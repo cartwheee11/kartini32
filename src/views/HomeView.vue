@@ -10,20 +10,6 @@
     </nav>
 
     <div class="header-container-wrapper">
-      <div class="header-images">
-        <!-- <img src="../assets/header-images/header-image1.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image2.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image3.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image4.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image5.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image6.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image7.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image8.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image9.jpg" width="100" alt="" /> -->
-      </div>
-
-
-
       <section class="container content is-large header-container">
         <h1 class="" style="margin-top: 57px">
           Доступные <br />
@@ -66,7 +52,6 @@
       </div>
     </section>
 
-    <!-- <hr style="padding: 0; margin: 0" /> -->
     <section>
       <div class="content container">
         <h1 style="font-size: 80px">
@@ -79,8 +64,6 @@
       </div>
     </section>
 
-    <!-- <hr style="padding: 0; margin: 0" /> -->
-
     <section class="svetlana-section">
       <div class="container">
         <div class="columns">
@@ -90,7 +73,7 @@
           </div>
           <div class="column svetlana-desk">
             <div class="content is-large"
-              style="background-color: #fff; padding: 50px; height: 100%; border-radius: 20px;">
+              style="background-color: #fff; padding: 50px; height: 100%; border-radius: 50px;">
               <h1>Головко Светлана — Художник</h1>
               <p style="color: black !important; font-size: 20px;">
                 Объединила вокруг себя коллектив лучших художников Брянска, чтобы предложить вам
@@ -102,12 +85,9 @@
       </div>
     </section>
 
-    <!-- <hr style="padding: 0; margin: 0" /> -->
-
     <section>
       <div class="container">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -247,37 +227,6 @@ onMounted(() => {
       reviews2.value.push(rev)
     }
   })
-
-  //working with images animation
-  const vel = ref([])
-
-  const imgs = document.querySelectorAll('.header-images img');
-
-  [].forEach.call(imgs, (img) => {
-    vel.value.push(Math.random() * 3 + 1)
-    img.style = `
-          // transform: rotate(${Math.random() * 180}deg);
-          top: ${Math.random() * window.innerHeight - 50}px;
-          left: ${Math.random() * window.innerWidth - 100}px;
-        `
-  })
-
-  function startUpdating() {
-    let update = () => {
-      ;[].forEach.call(imgs, (img, i) => {
-        img.style.top =
-          parseInt(img.style.top) > window.innerHeight
-            ? -100 + 'px'
-            : parseInt(img.style.top) + vel.value[i] + 'px'
-      })
-
-      setTimeout(update.bind(this), 16)
-    }
-
-    update()
-  }
-
-  startUpdating()
 })
 </script>
 
@@ -481,6 +430,19 @@ footer {
 
   .inner-nav {
     padding-left: 20px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper {
+    overflow: visible
+  }
+
+  .swiper img {
+    border-radius: 20px;
   }
 
   iframe {
