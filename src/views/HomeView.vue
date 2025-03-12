@@ -1,17 +1,17 @@
 <template>
-  <main>
-    <nav class="has-background-black-bis" style="position: fixed; width: 100%; top: 0; z-index: 200">
-      <div class="inner-nav content" style="padding: 15px 0; margin-bottom: 0">
-        <h3 class="logo" style="margin: 0; position: absolute; right: 20px">8 (903) 819 39 09</h3>
-        <h3 style="margin: 0">картины</h3>
+  <main class="main">
+    <nav style="position: fixed; width: 100%; top: 0; z-index: 200">
+      <div class="inner-nav content container" style="padding: 15px 0; margin-bottom: 0">
+        <h3 class="logo" style="font-family: bebas; gin: 0; position: absolute; right: 20px">8 (903) 819 39 09</h3>
+        <h3 style="margin: 0; font-family: bebas;">картины</h3>
       </div>
 
-      <hr style="padding: 0; margin: 0" />
+      <!-- <hr style="padding: 0; margin: 0" /> -->
     </nav>
 
     <div class="header-container-wrapper">
       <div class="header-images">
-        <img src="../assets/header-images/header-image1.jpg" width="100" alt="" />
+        <!-- <img src="../assets/header-images/header-image1.jpg" width="100" alt="" />
         <img src="../assets/header-images/header-image2.jpg" width="100" alt="" />
         <img src="../assets/header-images/header-image3.jpg" width="100" alt="" />
         <img src="../assets/header-images/header-image4.jpg" width="100" alt="" />
@@ -19,33 +19,37 @@
         <img src="../assets/header-images/header-image6.jpg" width="100" alt="" />
         <img src="../assets/header-images/header-image7.jpg" width="100" alt="" />
         <img src="../assets/header-images/header-image8.jpg" width="100" alt="" />
-        <img src="../assets/header-images/header-image9.jpg" width="100" alt="" />
+        <img src="../assets/header-images/header-image9.jpg" width="100" alt="" /> -->
       </div>
 
-      <section class="container has-text-centered content is-large header-container">
+
+
+      <section class="container content is-large header-container">
         <h1 class="" style="margin-top: 57px">
           Доступные <br />
-          картины в Брянске
+          картины в <br> Брянске
         </h1>
-        <a href="tel:+79038193909"><button class="button is-primary is-large is-responsive">Позвонить</button></a>
+        <p>Мы радуем вас живописью уже более 25 лет, <br>и не собираемся остонавливаться</p>
+        <a style="margin-top: 60px !important" href=" tel:+79038193909"><button
+            class="button is-primary is-large is-responsive">Позвонить</button></a>
       </section>
     </div>
 
-    <hr style="padding: 0; margin: 0" />
+    <!-- <hr style="padding: 0; margin: 0" /> -->
     <section class="map-section">
       <div class="container">
-        <div class="content is-medium">
-          <div class="columns is-desktop">
-            <div class="column">
-              <h1>Как нас найти?</h1>
+        <div class="content is-large">
+          <div class="columns ">
+            <div class="column is-three-fifths">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
-                height="600" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
+                height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
                 tabindex="0">
               </iframe>
             </div>
-            <div class="column">
-              <div class="content">
+
+            <div class="column is-one-quarters">
+              <div class="content is-medium address-part">
                 <h1>Наш адрес</h1>
                 <p>
                   <code>тц «Брянский»:</code> г. Брянск, Советский район, центральный рынок,
@@ -53,44 +57,7 @@
                 </p>
 
                 <div>
-                  <table class="is-small" style="width: 100%">
-                    <thead>
-                      <tr>
-                        <th>День</th>
-                        <th>Время</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Понедельник</td>
-                        <td>Выходной</td>
-                      </tr>
-                      <tr>
-                        <td>Вторник</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>Среда</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>Четверг</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>Пятница</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>Суббота</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                      <tr>
-                        <td>Воскресенье</td>
-                        <td>10:00 — 17:00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <WorkTimeTable />
                 </div>
               </div>
             </div>
@@ -99,30 +66,33 @@
       </div>
     </section>
 
-    <hr style="padding: 0; margin: 0" />
+    <!-- <hr style="padding: 0; margin: 0" /> -->
     <section>
       <div class="content container">
         <h1 style="font-size: 80px">
-          <span class="has-background-white has-text-black-bis">В наличии имеется более 1000 картин.</span>
+          <span class=" has-text-black-bis">В наличии имеется более 1000 картин.</span>
           Консультант подберет картину специально под ваш интерьер и бюджет. Также вы можете
           заказать у нас любой сюжет
         </h1>
-        <a href="tel:+79038193909"><button class="button is-primary is-large is-responsive">Позвонить</button></a>
+        <a href="tel:+79038193909"><button
+            class="button is-primary is-fullwidth is-large is-responsive">Позвонить</button></a>
       </div>
     </section>
 
-    <hr style="padding: 0; margin: 0" />
+    <!-- <hr style="padding: 0; margin: 0" /> -->
 
     <section class="svetlana-section">
-      <div class="container content is-large">
+      <div class="container">
         <div class="columns">
           <div class="column is-three-fifths">
-            <img style="width: 100%" src="../assets/images/svetlana.jpg" alt="" class="is-fluid" />
+            <img style="width: 100%; border-radius: 50px;" src="../assets/images/svetlana.jpg" alt=""
+              class="is-fluid" />
           </div>
-          <div class="column">
-            <div class="content">
+          <div class="column svetlana-desk">
+            <div class="content is-large"
+              style="background-color: #fff; padding: 50px; height: 100%; border-radius: 20px;">
               <h1>Головко Светлана — Художник</h1>
-              <p>
+              <p style="color: black !important; font-size: 20px;">
                 Объединила вокруг себя коллектив лучших художников Брянска, чтобы предложить вам
                 огромный выбор картин
               </p>
@@ -132,7 +102,7 @@
       </div>
     </section>
 
-    <hr style="padding: 0; margin: 0" />
+    <!-- <hr style="padding: 0; margin: 0" /> -->
 
     <section>
       <div class="container">
@@ -166,12 +136,12 @@
     <hr style="padding: 0; margin: 0" />
     <section class="feedback-section">
       <div class="container">
-        <div class="content is-large">
-          <h1>наши клиенты</h1>
+        <div class="content is-large has-text-centered">
+          <h1>Наши клиенты</h1>
         </div>
         <div class="columns">
           <div class="column">
-            <div v-for="rev in reviews" :key="rev.text" class="card has-background-black-ter">
+            <div v-for="rev in reviews" :key="rev.text" class="card">
               <div class="card-content">
                 <div class="media" style="align-items: center">
                   <div class="media-left">
@@ -194,7 +164,7 @@
             </div>
           </div>
           <div class="column">
-            <div v-for="rev in reviews2" :key="rev.text" class="card has-background-black-ter">
+            <div v-for="rev in reviews2" :key="rev.text" class="card">
               <div class="card-content">
                 <div class="media" style="align-items: center">
                   <div class="media-left">
@@ -223,140 +193,167 @@
 
     <hr style="padding: 0; margin: 0" />
 
-    <section>
-      <div class="container content has-text-centered">
-        <h1 class="title" style="font-size: 120px">8(903)819-39-09</h1>
-        <p class="subtitle">Позвоните по этому номеру и получите скидку 10%</p>
-        <a href="tel:+79038193909"><button class="button is-primary is-large is-responsive">Позвонить</button></a>
+    <footer>
+      <div class="container is-large content has-text-centered">
+        <h1 class="title" style="font-size: 80px">8(903)819-39-09</h1>
+        <p class="is-large">Позвоните по этому <br>номеру и получите скидку 10%</p>
+        <p><a href="tel:+79038193909"><button class="button is-primary is-large is-responsive">Позвонить</button></a>
+        </p>
       </div>
-    </section>
+    </footer>
   </main>
 </template>
 
-<script>
-// import WOW from "../assets/lib/wow.min.js"
+<script setup>
+import { onMounted, ref } from 'vue'
 
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
-// import Swiper and modules styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 
 import revs from '../assets/reviews.json'
-export default {
-  name: 'HomeView',
-  data() {
-    return {
-      images: [],
-      vel: [],
 
-      reviews: [],
-      reviews2: [],
+import WorkTimeTable from '../components/WorkTimeTable.vue'
+
+const reviews = ref([])
+const reviews2 = ref([])
+
+onMounted(() => {
+  //working with swiper
+  new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    breakpoints: {
+      1000: {
+        slidesPerView: 1.5,
+      },
+    },
+  })
+
+  //loading reviews
+  const allRevs = revs
+  allRevs.forEach((rev, id) => {
+    if (id < 3) {
+      reviews.value.push(rev)
+    } else {
+      reviews2.value.push(rev)
     }
-  },
+  })
 
-  mounted() {
-    new Swiper('.swiper', {
-      // configure Swiper to use modules
-      modules: [Navigation, Pagination],
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      loop: true,
+  //working with images animation
+  const vel = ref([])
 
-      slidesPerView: 1.2,
-      spaceBetween: 20,
-      breakpoints: {
-        1000: {
-          slidesPerView: 2.1,
-        },
-      },
-    })
+  const imgs = document.querySelectorAll('.header-images img');
 
-    const allRevs = revs
-    allRevs.forEach((rev, id) => {
-      if (id < 3) {
-        this.reviews.push(rev)
-      } else {
-        this.reviews2.push(rev)
-      }
-    })
-
-    const imgs = document.querySelectorAll('.header-container-wrapper img')
-    this.images = imgs
-
-      ;[].forEach.call(imgs, (img) => {
-        this.vel.push(Math.random() * 3 + 1)
-        img.style = `
+  [].forEach.call(imgs, (img) => {
+    vel.value.push(Math.random() * 3 + 1)
+    img.style = `
           // transform: rotate(${Math.random() * 180}deg);
           top: ${Math.random() * window.innerHeight - 50}px;
           left: ${Math.random() * window.innerWidth - 100}px;
         `
+  })
+
+  function startUpdating() {
+    let update = () => {
+      ;[].forEach.call(imgs, (img, i) => {
+        img.style.top =
+          parseInt(img.style.top) > window.innerHeight
+            ? -100 + 'px'
+            : parseInt(img.style.top) + vel.value[i] + 'px'
       })
 
-    this.startUpdating()
+      setTimeout(update.bind(this), 16)
+    }
 
-    console.log(this.images)
-  },
+    update()
+  }
 
-  methods: {
-    startUpdating() {
-      let update = () => {
-        ;[].forEach.call(this.images, (img, i) => {
-          img.style.top =
-            parseInt(img.style.top) > window.innerHeight
-              ? -100 + 'px'
-              : parseInt(img.style.top) + this.vel[i] + 'px'
-        })
-
-        setTimeout(update.bind(this), 16)
-      }
-
-      update()
-    },
-  },
-}
+  startUpdating()
+})
 </script>
 
 <style>
-.header-container-wrapper img {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.svetlana-section {
+  background-color: var(--accent-color);
+}
+
+p,
+td {
+  color: black;
+}
+
+main {
+  background-color: var(--back-color) !important;
+}
+
+main .header-images img {
   top: 0;
   position: absolute;
   z-index: -1;
 }
 
+.header-container-wrapper {
+  background-image: url(../assets/images/header-back.png);
+  background-position: center;
+  /* background-position-y: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.swiper {
+  /* overflow: visible */
+}
+
 .swiper-slide img {
-  border-radius: 10px;
+  border-radius: 50px;
+}
+
+code {
+  background-color: black;
+  color: white;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 70px;
-  border-radius: 10px;
-  background-color: #2e333d;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: var(--accent-color)
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: white;
-  font-size: 20px;
-  font-weight: 800;
+  color: var(--back-color-2);
+  font-size: 25px;
+  font-weight: 1000;
 }
 
 .card {
-  /* margin-bottom: 60px; */
   box-shadow: none;
+  border-radius: 50px;
 }
 
-.card hr {
-  background-color: #272b34;
+hr {
+  background-color: #6f6f6f34;
 }
 
 h1,
 h3,
 h2 {
-  font-family: bebas;
+  font-family: Montserrat;
+  color: var(--accent-color) !important;
 }
 
 .header-images {
@@ -371,9 +368,51 @@ section {
 }
 
 .map-section {
-  background-color: #14161a;
+  background-color: var(--accent-color);
   z-index: 2;
   position: relative;
+}
+
+.map-section h1,
+.map-section p,
+.map-section tr,
+.map-section td,
+.map-section th {
+  color: white !important
+}
+
+iframe {
+  border-radius: 50px;
+}
+
+.address-part {
+  /* background-color: var(--back-color-2); */
+  background-color: #fff;
+
+  padding: 50px;
+  border-radius: 50px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* transform-origin: right; */
+  /* transform: scale(0.75) translateY(-50px); */
+  /* box-shadow: 0px 23px 37px 0px rgba(34, 60, 80, 0.12); */
+  /* width: 500px; */
+}
+
+.address-part h1,
+.address-part p,
+.address-part tr,
+.address-part td,
+.address-part th {
+  color: var(--accent-color) !important;
+}
+
+
+table,
+tr,
+td,
+th {
+  border-color: rgba(119, 119, 119, 0.258) !important;
 }
 
 .header-container-wrapper {
@@ -381,48 +420,115 @@ section {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  height: 90vh;
+  height: 100vh;
   overflow-y: hidden !important;
   overflow: hidden !important;
+}
+
+
+
+button {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  font-family: "Montserrat";
+  border-radius: 100px !important;
 }
 
 .header-container {
   flex-grow: 0 !important;
 }
 
+
+
 .header-container h1 {
-  font-size: 140px;
-  text-transform: uppercase;
-  font-family: bebas;
+  font-size: 90px;
+  /* text-transform: uppercase; */
+  /* font-family: bebas; */
+  margin-bottom: 30px;
 }
 
-nav {
+.feedback-section {
+  background-color: var(--accent-color);
+}
+
+.feedback-section h1 {
+  color: white !important;
+}
+
+
+/* nav {
   text-align: center;
+} */
+
+footer {
+  padding: 200px 50px;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    text-align: left;
-  }
-
-  .inner-nav {
-    padding-left: 20px !important;
-  }
-
-  .header-container-wrapper {
-    height: 60vh;
+@media (max-width: 1215px) {
+  .svetlana-section h1 {
+    font-size: 40px;
   }
 
   section {
     padding: 30px 15px;
   }
+}
 
-  h1 {
-    font-size: 40px !important;
+@media (max-width: 1000px) {
+  /* nav {
+    text-align: left;
+  } */
+
+  .inner-nav {
+    padding-left: 20px !important;
+  }
+
+  iframe {
+    border-radius: 20px;
+  }
+
+  .address-part {
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .card {
     margin: 0;
+  }
+
+  .svetlana-section h1 {
+    font-size: 30px;
+  }
+
+  .svetlana-desk .content {
+    padding: 30px !important;
+  }
+
+}
+
+@media (max-width: 769px) {
+  h1 {
+    font-size: 40px !important;
+  }
+
+  iframe {
+    height: 600px;
+  }
+
+  .header-container-wrapper {
+    height: 90vh;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .svetlana-desk .content {
+    padding: 20px !important;
+  }
+
+  .svetlana-desk .content {
+    border-radius: 20px !important;
   }
 }
 </style>

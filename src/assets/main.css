@@ -3,3 +3,10 @@
   font-family: bebas;
   src: url('../assets/fonts/bebas.ttf');
 }
+
+:root {
+  /* --back-color: #fae8d2; */
+  --back-color: white;
+  --back-color-2: #cadcd4;
+  --accent-color: #324941;
+}
