@@ -438,7 +438,7 @@ footer {
   }
 
   .swiper {
-    overflow: visible
+    /* overflow: visible */
   }
 
   .swiper img {
