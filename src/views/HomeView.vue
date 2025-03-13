@@ -2,7 +2,7 @@
   <main class="main">
     <nav class="fixed w-full z-50">
       <div class="font-bebas mt-4 text-accent container flex items-center justify-between">
-        <span class="text-2xl">картины</span>
+        <span class="text-2xl leading-none">картины<br>брянск</span>
         <span class="text-2xl bg-accent p-4 px-10 pb-3 rounded-full text-white">8 (903) 819 39 09</span>
       </div>
     </nav>
@@ -13,7 +13,8 @@
           Доступные <br />
           картины в <br> Брянске
         </h1>
-        <p class="">Мы радуем вас живописью уже более 25 лет, <br>и не собираемся остонавливаться</p>
+        <p class="">Мы радуем вас живописью уже более 25 лет <br class="hidden md:block">и не собираемся остонавливаться
+        </p>
         <p><a href=" tel:+79038193909"><button class="">Позвонить</button></a></p>
       </section>
     </div>
@@ -24,14 +25,14 @@
         <div class="">
           <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
             <div class="">
-              <iframe class="rounded-4xl"
+              <iframe class="rounded-4xl min-h-[400px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
                 height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
                 tabindex="0">
               </iframe>
             </div>
 
-            <div class="bg-white p-10 rounded-4xl">
+            <div class="bg-white p-7 md:p-10 rounded-4xl">
               <div class="">
                 <h1>Наш адрес</h1>
                 <p class="text-accent">
