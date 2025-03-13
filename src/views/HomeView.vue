@@ -95,7 +95,9 @@
 
     <section class="bg-accent">
       <div class="container">
-        <h2 class=" mb-10 md:mb-20 text-white md:text-8xl">Заходите к нам: <br> <span class="text-back-3">у нас огромный
+        <h2 class=" mb-10 md:mb-20 font-[750] text-white md:text-8xl">Заглядывай к нам: <br><span class="text-back-3">у
+            нас
+            огромный
             выбор</span>
         </h2>
         <div class="swiper">
