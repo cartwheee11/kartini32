@@ -2,39 +2,88 @@
   <table class="is-small" style="width: 100%">
     <thead>
       <tr>
-        <th>День</th>
-        <th>Время</th>
+        <th>
+          <p>День</p>
+        </th>
+        <th>
+          <p>Время</p>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Понедельник</td>
-        <td>Выходной</td>
+        <td>
+          <p>Понедельник</p>
+        </td>
+        <td>
+          <p>Выходной</p>
+        </td>
       </tr>
       <tr>
-        <td>Вторник</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Вторник</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
       <tr>
-        <td>Среда</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Среда</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
       <tr>
-        <td>Четверг</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Четверг</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
       <tr>
-        <td>Пятница</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Пятница</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
       <tr>
-        <td>Суббота</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Суббота</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
       <tr>
-        <td>Воскресенье</td>
-        <td>10:00 — 17:00</td>
+        <td>
+          <p>Воскресенье</p>
+        </td>
+        <td>
+          <p>10:00 — 17:00</p>
+        </td>
       </tr>
     </tbody>
   </table>
 </template>
+
+<style scoped>
+@reference '../assets/main.css';
+
+th,
+td {
+  @apply text-left p-2 text-accent border-b-line border-b-2
+}
+
+p {
+  @apply text-base
+}
+
+th {
+  @apply border-b-2
+}
+</style>

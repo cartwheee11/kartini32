@@ -1,4 +1,6 @@
-@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
 @font-face {
   font-family: bebas;
   src: url('../assets/fonts/bebas.ttf');
@@ -7,6 +9,68 @@
 :root {
   /* --back-color: #fae8d2; */
   --back-color: white;
-  --back-color-2: #cadcd4;
+  --back-color-2: #e1f4ec;
   --accent-color: #324941;
+  --line-accent: #53daab16;
+  --line-color: rgba(124, 124, 124, 0.303);
+  --back-color-3: #add2c2;
+}
+
+@theme {
+  --font-bebas: 'Bebas';
+  --color-accent: var(--accent-color);
+  --color-line: var(--line-color);
+  --color-line-accent: var(--line-accent);
+  --color-back-2: var(--back-color-2);
+  --color-back-3: var(--back-color-3);
+  --font-mont: 'Montserrat';
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply font-black;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+
+  p:not(:first-child),
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 1.2em;
+  }
+
+  p {
+    @apply text-xl;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Montserrat';
+    @apply text-accent;
+  }
+
+  hr {
+    @apply border-line-accent border-1;
+  }
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4;
+}
+
+button {
+  @apply p-3 px-7 text-lg font-medium rounded-full text-white cursor-pointer hover:opacity-90;
+  background-color: var(--accent-color);
+  font-family: Montserrat;
 }

@@ -1,48 +1,50 @@
 <template>
   <main class="main">
-    <nav style="position: fixed; width: 100%; top: 0; z-index: 200">
-      <div class="inner-nav content container" style="padding: 15px 0; margin-bottom: 0">
-        <h3 class="logo" style="font-family: bebas; gin: 0; position: absolute; right: 20px">8 (903) 819 39 09</h3>
-        <h3 style="margin: 0; font-family: bebas;">картины</h3>
+    <nav class="fixed w-full z-50">
+      <div class="font-bebas mt-4 text-accent container flex items-center justify-between">
+        <span class="text-2xl">картины</span>
+        <span class="text-2xl bg-accent p-4 px-10 pb-3 rounded-full text-white">8 (903) 819 39 09</span>
       </div>
-
-      <!-- <hr style="padding: 0; margin: 0" /> -->
     </nav>
 
-    <div class="header-container-wrapper">
-      <section class="container content is-large header-container">
-        <h1 class="" style="margin-top: 57px">
+    <div class="header-container-wrapper h-[90vh] md:h-[100vh]">
+      <section class="container header-container">
+        <h1 class="text-4xl md:text-8xl lg:text-9xl md:text-7xl">
           Доступные <br />
           картины в <br> Брянске
         </h1>
-        <p>Мы радуем вас живописью уже более 25 лет, <br>и не собираемся остонавливаться</p>
-        <a style="margin-top: 60px !important" href=" tel:+79038193909"><button
-            class="button is-primary is-large is-responsive">Позвонить</button></a>
+        <p class="">Мы радуем вас живописью уже более 25 лет, <br>и не собираемся остонавливаться</p>
+        <p><a href=" tel:+79038193909"><button class="">Позвонить</button></a></p>
       </section>
     </div>
 
     <!-- <hr style="padding: 0; margin: 0" /> -->
-    <section class="map-section">
+    <section class="map-section bg-accent">
       <div class="container">
-        <div class="content is-large">
-          <div class="columns ">
-            <div class="column is-three-fifths">
-              <iframe
+        <div class="">
+          <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
+            <div class="">
+              <iframe class="rounded-4xl"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
                 height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
                 tabindex="0">
               </iframe>
             </div>
 
-            <div class="column is-one-quarters">
-              <div class="content is-medium address-part">
+            <div class="bg-white p-10 rounded-4xl">
+              <div class="">
                 <h1>Наш адрес</h1>
-                <p>
-                  <code>тц «Брянский»:</code> г. Брянск, Советский район, центральный рынок,
+                <p class="text-accent">
+                  <code class="bg-accent text-white rounded-full p-1 px-2 pb-0.5">тц «Брянский»:</code> г. Брянск,
+                  Советский
+                  район,
+                  центральный
+                  рынок,
                   остановка «Строительный техникум», ул. Емлютина. д. 42, 1 этаж
                 </p>
 
                 <div>
+                  <br>
                   <WorkTimeTable />
                 </div>
               </div>
@@ -52,30 +54,33 @@
       </div>
     </section>
 
-    <section>
-      <div class="content container">
-        <h1 style="font-size: 80px">
-          <span class=" has-text-black-bis">В наличии имеется более 1000 картин.</span>
+    <section class="bg-back-2">
+      <div class="container">
+        <h1 class="md:text-8xl text-accent">
+          <span class="text-black">В наличии имеется более 1000 картин.</span>
           Консультант подберет картину специально под ваш интерьер и бюджет. Также вы можете
           заказать у нас любой сюжет
         </h1>
-        <a href="tel:+79038193909"><button
-            class="button is-primary is-fullwidth is-large is-responsive">Позвонить</button></a>
+        <p><a href="tel:+79038193909"><button class="button is-primary w-full">Позвонить</button></a></p>
       </div>
     </section>
 
     <section class="svetlana-section">
       <div class="container">
-        <div class="columns">
+        <div class="grid md:grid-cols-[2fr_1fr] gap-4">
           <div class="column is-three-fifths">
-            <img style="width: 100%; border-radius: 50px;" src="../assets/images/svetlana.jpg" alt=""
-              class="is-fluid" />
+            <img class="w-full rounded-4xl" src="../assets/images/svetlana.jpg" alt="" />
           </div>
           <div class="column svetlana-desk">
-            <div class="content is-large"
-              style="background-color: #fff; padding: 50px; height: 100%; border-radius: 50px;">
-              <h1>Головко Светлана — Художник</h1>
-              <p style="color: black !important; font-size: 20px;">
+            <div class="rounded-4xl pt-10 pb-10 md:p-10 md:py-10 h-full">
+              <p class="bg-back-3 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline">Художник
+              </p>
+              <h1 class="md:text-6xl mt-4">
+
+                Головко<br>
+                Светлана
+              </h1>
+              <p class="text-accent">
                 Объединила вокруг себя коллектив лучших художников Брянска, чтобы предложить вам
                 огромный выбор картин
               </p>
@@ -85,8 +90,13 @@
       </div>
     </section>
 
-    <section>
+
+
+    <section class="bg-accent">
       <div class="container">
+        <h2 class=" mb-10 md:mb-20 text-white md:text-8xl">Заходите к нам: <br> <span class="text-back-3">у нас огромный
+            выбор</span>
+        </h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -113,71 +123,43 @@
       </div>
     </section>
 
-    <hr style="padding: 0; margin: 0" />
-    <section class="feedback-section">
+    <section class="feedback-section bg-back-2">
       <div class="container">
-        <div class="content is-large has-text-centered">
-          <h1>Наши клиенты</h1>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div v-for="rev in reviews" :key="rev.text" class="card">
-              <div class="card-content">
-                <div class="media" style="align-items: center">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img style="border-radius: 100%" :src="rev.avatar" alt="" />
-                    </figure>
-                  </div>
+        <h1 class="md:text-8xl lg:text-9xl text-center">Наши клиенты</h1>
+        <div class="md:columns-2 gap-4 break-after-column mt-10 md:mt-15">
+          <div class="card p-7 md:p-10 bg-white rounded-3xl break-inside-avoid mb-4" v-for="rev in reviews"
+            :key="rev.text">
+            <div class="flex items-center justify-between">
 
-                  <div class="media-content">
-                    <div class="content">
-                      <p class="title is-4">{{ rev.name }}</p>
-                    </div>
-                  </div>
-                  <img src="../assets/images/stars.png" alt="" />
-                </div>
-
-                <hr />
-                <div class="content is-large is-responsive">{{ rev.text }}</div>
+              <div class="flex items-center">
+                <img class="mr-4 rounded-full size-10" :src="rev.avatar" alt="" />
+                <p class="md:text-2xl font-bold mt-0">{{ rev.name }}</p>
               </div>
+
+              <div class=""><img src="../assets/images/stars.png" alt="" /></div>
+
             </div>
+            <br class="displa hidden md:block">
+            <hr class="displa hidden md:block">
+
+            <p class="">{{ rev.text }}</p>
+
           </div>
-          <div class="column">
-            <div v-for="rev in reviews2" :key="rev.text" class="card">
-              <div class="card-content">
-                <div class="media" style="align-items: center">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img style="border-radius: 100%" :src="rev.avatar" alt="" />
-                    </figure>
-                  </div>
 
-                  <div class="media-content">
-                    <div class="content">
-                      <p class="title is-4">{{ rev.name }}</p>
-                    </div>
-                  </div>
-
-                  <img src="../assets/images/stars.png" alt="" />
-                </div>
-
-                <hr />
-                <div class="content is-large is-responsive">{{ rev.text }}</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <hr style="padding: 0; margin: 0" />
 
-    <footer>
-      <div class="container is-large content has-text-centered">
-        <h1 class="title" style="font-size: 80px">8(903)819-39-09</h1>
-        <p class="is-large">Позвоните по этому <br>номеру и получите скидку 10%</p>
-        <p><a href="tel:+79038193909"><button class="button is-primary is-large is-responsive">Позвонить</button></a>
+    <footer class="py-30">
+      <div class="container is-large content has-text-centered text-center">
+        <h2 class="text-6xl">8(903)819-39-09</h2>
+        <p class="">Позвоните по этому <br>номеру и получите скидку 10%</p>
+        <p>
+          <a href="tel:+79038193909">
+            <button class="">Позвонить</button>
+          </a>
         </p>
       </div>
     </footer>
@@ -197,7 +179,6 @@ import revs from '../assets/reviews.json'
 import WorkTimeTable from '../components/WorkTimeTable.vue'
 
 const reviews = ref([])
-const reviews2 = ref([])
 
 onMounted(() => {
   //working with swiper
@@ -220,37 +201,14 @@ onMounted(() => {
 
   //loading reviews
   const allRevs = revs
-  allRevs.forEach((rev, id) => {
-    if (id < 3) {
-      reviews.value.push(rev)
-    } else {
-      reviews2.value.push(rev)
-    }
+  allRevs.forEach((rev) => {
+    reviews.value.push(rev)
   })
 })
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-.svetlana-section {
-  background-color: var(--accent-color);
-}
-
-p,
-td {
-  color: black;
-}
-
-main {
-  background-color: var(--back-color) !important;
-}
-
-main .header-images img {
-  top: 0;
-  position: absolute;
-  z-index: -1;
-}
+@reference "../assets/main.css";
 
 .header-container-wrapper {
   background-image: url(../assets/images/header-back.png);
@@ -261,17 +219,8 @@ main .header-images img {
 
 }
 
-.swiper {
-  /* overflow: visible */
-}
-
 .swiper-slide img {
   border-radius: 50px;
-}
-
-code {
-  background-color: black;
-  color: white;
 }
 
 .swiper-button-next,
@@ -289,79 +238,8 @@ code {
   font-weight: 1000;
 }
 
-.card {
-  box-shadow: none;
-  border-radius: 50px;
-}
-
-hr {
-  background-color: #6f6f6f34;
-}
-
-h1,
-h3,
-h2 {
-  font-family: Montserrat;
-  color: var(--accent-color) !important;
-}
-
-.header-images {
-  overflow-y: hidden !important;
-  overflow: hidden !important;
-
-  z-index: 0;
-}
-
 section {
-  padding: 100px 0;
-}
-
-.map-section {
-  background-color: var(--accent-color);
-  z-index: 2;
-  position: relative;
-}
-
-.map-section h1,
-.map-section p,
-.map-section tr,
-.map-section td,
-.map-section th {
-  color: white !important
-}
-
-iframe {
-  border-radius: 50px;
-}
-
-.address-part {
-  /* background-color: var(--back-color-2); */
-  background-color: #fff;
-
-  padding: 50px;
-  border-radius: 50px;
-  /* position: absolute; */
-  /* right: 0; */
-  /* transform-origin: right; */
-  /* transform: scale(0.75) translateY(-50px); */
-  /* box-shadow: 0px 23px 37px 0px rgba(34, 60, 80, 0.12); */
-  /* width: 500px; */
-}
-
-.address-part h1,
-.address-part p,
-.address-part tr,
-.address-part td,
-.address-part th {
-  color: var(--accent-color) !important;
-}
-
-
-table,
-tr,
-td,
-th {
-  border-color: rgba(119, 119, 119, 0.258) !important;
+  @apply py-10 md:py-25
 }
 
 .header-container-wrapper {
@@ -369,18 +247,9 @@ th {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  height: 100vh;
+
   overflow-y: hidden !important;
   overflow: hidden !important;
-}
-
-
-
-button {
-  background-color: var(--accent-color) !important;
-  color: white !important;
-  font-family: "Montserrat";
-  border-radius: 100px !important;
 }
 
 .header-container {
@@ -388,109 +257,15 @@ button {
 }
 
 
-
-.header-container h1 {
-  font-size: 90px;
-  /* text-transform: uppercase; */
-  /* font-family: bebas; */
-  margin-bottom: 30px;
-}
-
-.feedback-section {
-  background-color: var(--accent-color);
-}
-
-.feedback-section h1 {
-  color: white !important;
-}
-
-
-/* nav {
-  text-align: center;
-} */
-
-footer {
-  padding: 200px 50px;
-}
-
-@media (max-width: 1215px) {
-  .svetlana-section h1 {
-    font-size: 40px;
-  }
-
-  section {
-    padding: 30px 15px;
-  }
-}
-
 @media (max-width: 1000px) {
-  /* nav {
-    text-align: left;
-  } */
-
-  .inner-nav {
-    padding-left: 20px !important;
-  }
 
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
   }
 
-  .swiper {
-    /* overflow: visible */
-  }
-
   .swiper img {
     border-radius: 20px;
-  }
-
-  iframe {
-    border-radius: 20px;
-  }
-
-  .address-part {
-    padding: 20px;
-    border-radius: 20px;
-  }
-
-  .card {
-    margin: 0;
-  }
-
-  .svetlana-section h1 {
-    font-size: 30px;
-  }
-
-  .svetlana-desk .content {
-    padding: 30px !important;
-  }
-
-}
-
-@media (max-width: 769px) {
-  h1 {
-    font-size: 40px !important;
-  }
-
-  iframe {
-    height: 600px;
-  }
-
-  .header-container-wrapper {
-    height: 90vh;
-  }
-
-  .card {
-    border-radius: 20px;
-  }
-
-  .svetlana-desk .content {
-    padding: 20px !important;
-  }
-
-  .svetlana-desk .content {
-    border-radius: 20px !important;
   }
 }
 </style>
