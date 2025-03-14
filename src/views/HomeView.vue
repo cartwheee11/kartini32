@@ -74,7 +74,7 @@
           </div>
           <div class="column svetlana-desk">
             <div class="rounded-4xl pt-10 pb-10 md:p-10 md:py-10 h-full">
-              <p class="bg-back-3 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline">Художник
+              <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline">Художник
               </p>
               <h1 class="md:text-6xl mt-4">
 
@@ -142,8 +142,8 @@
               <div class=""><img src="../assets/images/stars.png" alt="" /></div>
 
             </div>
-            <br class="displa hidden md:block">
-            <hr class="displa hidden md:block">
+            <!-- <br class="displa hidden md:block"> -->
+            <!-- <hr class="displa hidden md:block"> -->
 
             <p class="">{{ rev.text }}</p>
 
@@ -265,6 +265,7 @@ section {
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
+    opacity: 0;
   }
 
   .swiper img {

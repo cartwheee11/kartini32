@@ -7,23 +7,23 @@
 }
 
 :root {
-  /* --back-color: #fae8d2; */
   --back-color: white;
   --back-color-2: #e1f4ec;
   --accent-color: #324941;
-  --line-accent: #53daab16;
+  --line-accent: #53daab2d;
   --line-color: rgba(124, 124, 124, 0.303);
-  --back-color-3: #add2c2;
+  --back-color-3: #b9e7d3;
 }
 
 @theme {
   --font-bebas: 'Bebas';
+  --font-mont: 'Montserrat';
+
   --color-accent: var(--accent-color);
   --color-line: var(--line-color);
   --color-line-accent: var(--line-accent);
   --color-back-2: var(--back-color-2);
   --color-back-3: var(--back-color-3);
-  --font-mont: 'Montserrat';
 }
 
 @layer base {
