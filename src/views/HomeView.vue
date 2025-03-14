@@ -70,7 +70,7 @@
       <div class="container">
         <div class="grid md:grid-cols-[2fr_1fr] gap-4">
           <div class="column is-three-fifths">
-            <img class="w-full rounded-4xl" src="../assets/images/svetlana.jpg" alt="" />
+            <img class="w-full rounded-4xl" src="../assets/images/svetlana.webp" alt="" />
           </div>
           <div class="column svetlana-desk">
             <div class="rounded-4xl pt-10 pb-10 md:p-10 md:py-10 h-full">
@@ -104,13 +104,13 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/1.jpeg" alt="" />
+              <img src="../assets/images/swiper-images/1.webp" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/2.jpeg" alt="" />
+              <img src="../assets/images/swiper-images/2.webp" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/3.jpeg" alt="" />
+              <img src="../assets/images/swiper-images/3.webp" alt="" />
             </div>
           </div>
           <!-- If we need pagination -->
@@ -139,7 +139,7 @@
                 <p class="md:text-2xl font-bold mt-0">{{ rev.name }}</p>
               </div>
 
-              <div class=""><img src="../assets/images/stars.png" alt="" /></div>
+              <div class=""><img src="../assets/images/stars.webp" alt="" /></div>
 
             </div>
             <!-- <br class="displa hidden md:block"> -->
@@ -214,7 +214,7 @@ onMounted(() => {
 @reference "../assets/main.css";
 
 .header-container-wrapper {
-  background-image: url(../assets/images/header-back.png);
+  background-image: url(../assets/images/header-back.webp);
   background-position: center;
   /* background-position-y: center; */
   background-repeat: no-repeat;
