@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.13",
+    "aos": "^3.0.0-beta.6",
     "pinia": "^3.0.1",
     "swiper": "^11.2.5",
     "tailwindcss": "^4.0.13",
