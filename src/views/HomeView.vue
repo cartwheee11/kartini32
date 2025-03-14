@@ -3,7 +3,8 @@
     <nav class="fixed w-full z-50">
       <div class="font-bebas mt-4 text-accent container flex items-center justify-between">
         <span class="text-2xl leading-none">картины<br>брянск</span>
-        <span class="text-2xl bg-accent p-4 px-10 pb-3 rounded-full text-white">8 (903) 819 39 09</span>
+        <a href="tel:+79038193909"><span class="text-2xl bg-accent p-4 px-10 pb-3 rounded-full text-white">8 903
+            819-39-09</span></a>
       </div>
     </nav>
 
@@ -22,36 +23,40 @@
     <!-- <hr style="padding: 0; margin: 0" /> -->
     <section class="map-section bg-accent">
       <div class="container">
-        <div class="">
-          <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
+
+        <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
+          <div class="">
+            <iframe class="rounded-4xl min-h-[400px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
+              height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+            </iframe>
+          </div>
+
+          <div class="bg-white p-7 md:p-10 rounded-4xl">
             <div class="">
-              <iframe class="rounded-4xl min-h-[400px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
-                height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
-              </iframe>
-            </div>
+              <h1>Наш адрес</h1>
+              <p class="text-accent">
+                <code class="bg-accent text-white rounded-full p-1 px-2 pb-0.5">тц «Брянский»:</code> г. Брянск,
+                Советский
+                район,
+                центральный
+                рынок,
+                остановка «Строительный техникум», ул. Емлютина. д. 42, 1 этаж
+              </p>
 
-            <div class="bg-white p-7 md:p-10 rounded-4xl">
-              <div class="">
-                <h1>Наш адрес</h1>
-                <p class="text-accent">
-                  <code class="bg-accent text-white rounded-full p-1 px-2 pb-0.5">тц «Брянский»:</code> г. Брянск,
-                  Советский
-                  район,
-                  центральный
-                  рынок,
-                  остановка «Строительный техникум», ул. Емлютина. д. 42, 1 этаж
-                </p>
-
-                <div>
-                  <br>
-                  <WorkTimeTable />
-                </div>
+              <div>
+                <br>
+                <WorkTimeTable />
               </div>
             </div>
           </div>
         </div>
+
+        <p><a
+            href="https://www.google.com/maps?ll=53.239211,34.355227&z=17&t=m&hl=ru&gl=RU&mapclient=embed&q=%D1%83%D0%BB.+%D0%95%D0%BC%D0%BB%D1%8E%D1%82%D0%B8%D0%BD%D0%B0,+42+%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA+%D0%91%D1%80%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.+241050"><button
+              class="border-4 font-bold w-full sm:text-2xl md:text-3xl p-4">Показать на карте
+              google</button></a></p>
       </div>
     </section>
 
@@ -62,7 +67,7 @@
           Консультант подберет картину специально под ваш интерьер и бюджет. Также вы можете
           заказать у нас любой сюжет
         </h1>
-        <p><a href="tel:+79038193909"><button class="button is-primary w-full">Позвонить</button></a></p>
+        <p><a href="tel:+79038193909"><button class=" p-4 w-full">Позвонить</button></a></p>
       </div>
     </section>
 
@@ -157,7 +162,8 @@
 
     <footer class="py-30">
       <div class="container is-large content has-text-centered text-center">
-        <h2 class="text-6xl">8(903)819-39-09</h2>
+        <h2 class="text-6xl">8 903 819-
+          39-09</h2>
         <p class="">Позвоните по этому <br>номеру и получите скидку 10%</p>
         <p>
           <a href="tel:+79038193909">
@@ -219,7 +225,6 @@ onMounted(() => {
   /* background-position-y: center; */
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .swiper-slide img {

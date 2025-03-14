@@ -63,14 +63,12 @@
   hr {
     @apply border-line-accent border-1;
   }
+
+  button {
+    @apply p-4 px-9 text-lg rounded-full text-white cursor-pointer hover:opacity-90 font-mont bg-accent font-bold;
+  }
 }
 
 .container {
   @apply mx-auto max-w-7xl px-4;
-}
-
-button {
-  @apply p-3 px-7 text-lg font-medium rounded-full text-white cursor-pointer hover:opacity-90;
-  background-color: var(--accent-color);
-  font-family: Montserrat;
 }
