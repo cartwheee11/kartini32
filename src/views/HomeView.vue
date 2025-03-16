@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <main class="main overflow-hidden">
     <nav class="fixed w-full z-50">
       <div class="font-bebas mt-4 text-accent container flex items-center justify-between">
         <span class="text-2xl leading-none">картины<br>брянск</span>
@@ -8,18 +8,23 @@
       </div>
     </nav>
 
-    <div class="w-full overflow-hidden">
-      <div class="header-container-wrapper h-[90vh] md:h-[100vh]" data-aos="zoom-out" data-aos-offset="20">
-        <section class="container header-container">
-          <h1 data-aos="fade-up" class="text-4xl md:text-8xl lg:text-9xl md:text-7xl">
+    <div class="w-full overflow-hidden bg-gradient-to-br from-emerald-200 via-white to-emerald-200" style="background: rgb(182,246,216);
+background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 49%, rgba(182,246,216,1) 100%);
+" data-aos="zoom-out" data-aos-offset="20">
+      <div class="header-container-wrapper h-[90vh] md:h-[100vh] bg-origin-padding"
+        :style="`transform: translateY(${scrollY / 3}px) scale(${1 + scrollY / 6000});`">
+        <section class="container header-container mt-9">
+          <h1 data-aos="fade-up"
+            class="text-4xl md:text-8xl lg:text-8xl bg-gradient-to-br uppercase from-accent via-accent to-emerald-100 bg-clip-text ">
             Доступные <br />
             картины в <br> Брянске
           </h1>
-          <p data-aos="fade-up" data-aos-delay="200" class="">Мы радуем вас живописью уже более 25 лет <br
-              class="hidden md:block">и не
+          <p class="mt-13 text-accent" data-aos="fade-up" data-aos-delay="200">Мы радуем вас живописью уже более 25 лет
+            <br class="hidden md:block">и не
             собираемся остонавливаться
           </p>
-          <p data-aos="fade-up" data-aos-delay="400"><a href=" tel:+79038193909"><button class="">Позвонить</button></a>
+          <p class="mt-13" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"><a
+              href=" tel:+79038193909"><button class="bg-gradient-to-r">Позвонить</button></a>
           </p>
         </section>
       </div>
@@ -112,7 +117,7 @@
             огромный
             выбор</span>
         </h2>
-        <div class="swiper">
+        <div class="swiper" data-aos="fade-up" data-aos-delay="20">
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -169,9 +174,11 @@
 
     <footer class="py-30">
       <div data-aos="fade-up" class="container is-large content has-text-centered text-center">
-        <h2 class="text-6xl">8 903 819-
+        <h2 class="text-6xl font-extrabold mb-10">8 903 819-
           39-09</h2>
+
         <p class="">Позвоните по этому <br>номеру и получите скидку 10%</p>
+        <br>
         <p>
           <a href="tel:+79038193909">
             <button class="">Позвонить</button>
@@ -199,11 +206,17 @@ import revs from '../assets/reviews.json'
 import WorkTimeTable from '../components/WorkTimeTable.vue'
 
 const reviews = ref([])
+let scrollY = ref(0)
 
 onMounted(() => {
   AOS.init({
     duration: 1000
   })
+
+  window.addEventListener('scroll', (event) => {
+    scrollY.value = window.scrollY;
+  })
+
   //working with swiper
   new Swiper('.swiper', {
     modules: [Navigation, Pagination],
