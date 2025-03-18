@@ -11,7 +11,8 @@
     <div class="w-full overflow-hidden bg-gradient-to-br from-emerald-200 via-white to-emerald-200" style="background: rgb(182,246,216);
 background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 49%, rgba(182,246,216,1) 100%);
 " data-aos="zoom-out" data-aos-offset="20">
-      <div class="header-container-wrapper h-[90vh] md:h-[100vh] bg-origin-padding"
+      <div
+        class="header-container-wrapper h-[90vh] md:h-[100vh] bg-origin-padding overflow-hidden flex flex-col justify-center bg-cover bg-center bg-no-repeat bg-[url(../assets/images/header-back.webp)]"
         :style="`transform: translateY(${scrollY / 3}px) scale(${1 + scrollY / 6000});`">
         <section class="container header-container mt-9">
           <h1 data-aos="fade-up"
@@ -23,7 +24,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
             <br class="hidden md:block">и не
             собираемся остонавливаться
           </p>
-          <p class="mt-13" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"><a
+          <p class="mt-13" data-aos="fade-up" data-aos-offset="-1000" data-aos-delay="400" data-aos-once="true"><a
               href=" tel:+79038193909"><button class="bg-gradient-to-r">Позвонить</button></a>
           </p>
         </section>
@@ -246,62 +247,28 @@ onMounted(() => {
 <style>
 @reference "../assets/main.css";
 
-.header-container-wrapper {
-  background-image: url(../assets/images/header-back.webp);
-  background-position: center;
-  /* background-position-y: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
+/* swiper style */
 .swiper-slide img {
-  border-radius: 50px;
+  @apply rounded-4xl md:rounded-[50px]
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-  background-color: var(--accent-color)
+  @apply w-[80px] h-[80px] bg-accent rounded-full
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: var(--back-color-2);
-  font-size: 25px;
-  font-weight: 1000;
+  @apply text-2xl font-black text-back-2
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply hidden md:flex
 }
 
 section {
   @apply py-10 md:py-25
-}
-
-.header-container-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-
-  overflow-y: hidden !important;
-  overflow: hidden !important;
-}
-
-.header-container {
-  flex-grow: 0 !important;
-}
-
-
-@media (max-width: 1000px) {
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
-    opacity: 0;
-  }
-
-  .swiper img {
-    border-radius: 20px;
-  }
 }
 </style>
