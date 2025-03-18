@@ -22,7 +22,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
           </h1>
           <p class="mt-13 text-accent" data-aos="fade-up" data-aos-delay="200">Мы радуем вас живописью уже более 25 лет
             <br class="hidden md:block">и не
-            собираемся остонавливаться
+            собираемся останавливаться
           </p>
           <p class="mt-13" data-aos="fade-up" data-aos-offset="-1000" data-aos-delay="400" data-aos-once="true"><a
               href=" tel:+79038193909"><button class="bg-gradient-to-r">Позвонить</button></a>
@@ -72,6 +72,11 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
       </div>
     </section>
 
+    <!-- //секция с примерами работ -->
+
+
+
+
     <section class="bg-back-2">
       <div class="container">
         <h2 class="md:text-8xl text-accent font-black" data-aos="fade-right">
@@ -80,6 +85,61 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
         </h2>
         <p data-aos="fade-up"><a href="tel:+79038193909"><button
               class=" sm:text-2xl md:text-3xl p-4 w-full">Позвонить</button></a></p>
+      </div>
+    </section>
+
+    <section class="bg-accent">
+      <div class="container grid md:grid-cols-8 grid-cols-1 gap-4">
+
+        <div class="gap-4 flex flex-col col-span-5">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/4.webp"
+            alt="">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/3.webp"
+            alt="">
+        </div>
+
+        <div class="flex flex-col gap-4 md:col-span-3 col-span-5">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/5.webp"
+            alt="">
+          <div data-aos="fade-up" class="bg-white col-span-3 rounded-4xl p-10">
+            <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline-block">
+              живопись</p>
+            <h2 class="mt-2 font-black text-4xl md:text-5xl">Потрясные пейзажи</h2>
+
+            <p class="text-accent">Это самая настоящая живопись, выполненная масляными красками с натуры или же
+              руководствуясь безграничной фантазией автора</p>
+
+            <p
+              class="md:mt-30 text-accent font-black text-5xl font-mont text-right  rounded-full text-accent p-4 py-2 inline-block float-right border-4 border-back-2">
+              <span class="text-base">От</span> <span class="">5999р.</span>
+            </p>
+
+            <div class=" clear-both"></div>
+          </div>
+
+
+          <div data-aos="fade-up" class="grow">
+            <a href="tel:+79038193909" class="
+              hover:scale-95
+              transition
+              flex
+              items-center
+              justify-center
+              border-6
+              text-white
+              rounded-4xl
+              p-6
+              md:p-10
+              text-4xl
+              md:text-5xl
+              font-mont
+              font-bold
+              h-full
+            ">Позвонить</a>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -154,7 +214,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
 
               <div class="flex items-center">
                 <img class="mr-4 rounded-full size-10" :src="rev.avatar" alt="" />
-                <p class="md:text-2xl font-bold mt-0">{{ rev.name }}</p>
+                <p class="text-accent md:text-2xl font-bold mt-0">{{ rev.name }}</p>
               </div>
 
               <div class=""><img src="../assets/images/stars.webp" alt="" /></div>
@@ -173,12 +233,12 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
 
     <hr style="padding: 0; margin: 0" />
 
-    <footer class="py-30">
+    <footer class="py-20 md:py-40">
       <div data-aos="fade-up" class="container is-large content has-text-centered text-center">
-        <h2 class="text-6xl font-extrabold mb-10">8 903 819-
+        <h2 class="text-5xl md:text-6xl font-black mb-9">8 903 819-
           39-09</h2>
 
-        <p class="">Позвоните по этому <br>номеру и получите скидку 10%</p>
+        <p class="text-accent">Позвоните по этому <br>номеру и получите скидку 10%</p>
         <br>
         <p>
           <a href="tel:+79038193909">
@@ -208,13 +268,22 @@ import WorkTimeTable from '../components/WorkTimeTable.vue'
 
 const reviews = ref([])
 let scrollY = ref(0)
+let workExamples = ref([])
+
+for (let i = 1; i <= 5; i++) {
+  workExamples.value.push('/src/assets/images/work-examples/' + i + '.webp')
+}
+
+console.log(workExamples.value)
 
 onMounted(() => {
   AOS.init({
     duration: 1000
   })
 
-  window.addEventListener('scroll', (event) => {
+
+
+  window.addEventListener('scroll', () => {
     scrollY.value = window.scrollY;
   })
 
