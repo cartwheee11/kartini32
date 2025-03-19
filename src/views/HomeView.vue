@@ -8,7 +8,7 @@
       </div>
     </nav>
 
-    <div class="w-full overflow-hidden bg-gradient-to-br from-emerald-200 via-white to-emerald-200" style="background: rgb(182,246,216);
+    <div class="w-full h-[100vh] overflow-hidden" style="background: rgb(182,246,216);
 background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 49%, rgba(182,246,216,1) 100%);
 " data-aos="zoom-out" data-aos-offset="20">
       <div
@@ -37,7 +37,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
 
         <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
           <div class="" data-aos="fade-up">
-            <iframe class="rounded-4xl min-h-[400px]"
+            <iframe title="google maps" class="rounded-4xl min-h-[400px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8062424484615!2d34.3527056212051!3d53.239249497912375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f80186e4a3%3A0x83b4d578fba5ffaf!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1742386172604!5m2!1sru!2sru"
               width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -91,15 +91,15 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
       <div class="container grid grid-cols-1 lg:grid-cols-8  gap-4">
 
         <div class="gap-4 flex flex-col col-span-5">
-          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/4.webp"
-            alt="">
-          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/3.webp"
-            alt="">
+          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
+            src="../assets/images/work-examples/4.webp" alt="">
+          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
+            src="../assets/images/work-examples/3.webp" alt="">
         </div>
 
         <div class="flex flex-col gap-4 lg:col-span-3 col-span-5">
-          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/5.webp"
-            alt="">
+          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
+            src="../assets/images/work-examples/5.webp" alt="">
           <div data-aos="fade-up" class="flex flex-col bg-white grow relative col-span-3 rounded-4xl p-8 md:p-10">
             <div>
               <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline-block">
@@ -167,7 +167,8 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
       <div class="container">
         <div class="grid md:grid-cols-[2fr_1fr] gap-4">
           <div class="column is-three-fifths">
-            <img data-aos="fade-up" class="w-full rounded-4xl" src="../assets/images/svetlana.webp" alt="" />
+            <img loading="lazy" data-aos="fade-up" class="w-full rounded-4xl" src="../assets/images/svetlana.webp"
+              alt="" />
           </div>
           <div class="column svetlana-desk">
             <div data-aos="fade-up" data-aos-delay="200" class="rounded-4xl pt-10 pb-10 md:p-10 md:py-10 h-full">
@@ -202,13 +203,13 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/1.webp" alt="" />
+              <img loading="lazy" src="../assets/images/swiper-images/1.webp" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/2.webp" alt="" />
+              <img loading="lazy" src="../assets/images/swiper-images/2.webp" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="../assets/images/swiper-images/3.webp" alt="" />
+              <img loading="lazy" src="../assets/images/swiper-images/3.webp" alt="" />
             </div>
           </div>
           <!-- If we need pagination -->
@@ -233,11 +234,11 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
             <div class="flex items-center justify-between">
 
               <div class="flex items-center">
-                <img class="mr-4 rounded-full size-10" :src="rev.avatar" alt="" />
+                <img loading="lazy" class="mr-4 rounded-full size-10" :src="rev.avatar" alt="" />
                 <p class="text-accent md:text-2xl font-bold mt-0">{{ rev.name }}</p>
               </div>
 
-              <div class=""><img src="../assets/images/stars.webp" alt="" /></div>
+              <div class=""><img loading="lazy" src="../assets/images/stars.webp" alt="" /></div>
 
             </div>
             <!-- <br class="displa hidden md:block"> -->
