@@ -15,8 +15,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
         class="header-container-wrapper h-[90vh] md:h-[100vh] bg-origin-padding overflow-hidden flex flex-col justify-center bg-cover bg-center bg-no-repeat bg-[url(../assets/images/header-back.webp)]"
         :style="`transform: translateY(${scrollY / 3}px) scale(${1 + scrollY / 6000});`">
         <section class="container header-container mt-9">
-          <h1 data-aos="fade-up"
-            class="text-4xl md:text-8xl lg:text-8xl bg-gradient-to-br uppercase from-accent via-accent to-emerald-100 bg-clip-text ">
+          <h1 data-aos="fade-up" class="text-4xl md:text-8xl lg:text-8xl uppercase ">
             Доступные <br />
             картины в <br> Брянске
           </h1>

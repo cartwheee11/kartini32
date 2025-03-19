@@ -1,10 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
-
-@font-face {
-  font-family: mont;
-  src: url('../assets/fonts/mont.ttf');
-}
 
 @font-face {
   font-family: bebas;
@@ -22,7 +17,7 @@
 
 @theme {
   --font-bebas: 'Bebas';
-  --font-mont: mont;
+  --font-mont: Montserrat;
 
   --color-accent: var(--accent-color);
   --color-line: var(--line-color);
@@ -65,7 +60,6 @@
   h1,
   h2,
   h3 {
-    font-family: 'Montserrat';
     @apply text-accent font-mont;
   }
 
