@@ -89,7 +89,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
     </section>
 
     <section class="bg-accent">
-      <div class="container grid md:grid-cols-8 grid-cols-1 gap-4">
+      <div class="container grid grid-cols-1 lg:grid-cols-8  gap-4">
 
         <div class="gap-4 flex flex-col col-span-5">
           <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/4.webp"
@@ -98,27 +98,47 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
             alt="">
         </div>
 
-        <div class="flex flex-col gap-4 md:col-span-3 col-span-5">
+        <div class="flex flex-col gap-4 lg:col-span-3 col-span-5">
           <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/5.webp"
             alt="">
-          <div data-aos="fade-up" class="bg-white col-span-3 rounded-4xl p-10">
-            <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline-block">
-              живопись</p>
-            <h2 class="mt-2 font-black text-4xl md:text-5xl">Потрясные пейзажи</h2>
+          <div data-aos="fade-up" class="flex flex-col bg-white grow relative col-span-3 rounded-4xl p-8 md:p-10">
+            <div>
+              <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline-block">
+                живопись</p>
+            </div>
+            <h2 class="mt-2 font-black text-4xl xl:text-5xl">Потрясные пейзажи</h2>
 
-            <p class="text-accent">Это самая настоящая живопись, выполненная масляными красками с натуры или же
+            <p class="text-accent lg:text-base xl:text-xl">Это самая настоящая живопись, выполненная масляными красками
+              с натуры
+              или
+              же
               руководствуясь безграничной фантазией автора</p>
 
-            <p
-              class="md:mt-30 text-accent font-black text-5xl font-mont text-right  rounded-full text-accent p-4 py-2 inline-block float-right border-4 border-back-2">
-              <span class="text-base">От</span> <span class="">5999р.</span>
-            </p>
+            <div class="grow justify-end flex-col flex mt-10">
+              <div>
+                <p class="
+                  text-accent
+                  text-5xl lg:text-5xl
+                  font-black
+                  xl:text-7xl
+                  font-mont
+                  text-right
+                  text-accent
+                  p-4
+                  py-2
+                  float-right
+                  ">
+                  <span class="text-base">От</span> <span class="border-solid
+                  border-b-10 border-back-2">5999р.</span>
+                </p>
+              </div>
+            </div>
 
             <div class=" clear-both"></div>
           </div>
 
 
-          <div data-aos="fade-up" class="grow">
+          <div data-aos="fade-up" class="">
             <a href="tel:+79038193909" class="
               hover:scale-95
               transition
@@ -127,11 +147,12 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
               justify-center
               border-6
               text-white
-              rounded-4xl
+              rounded-full
               p-6
-              md:p-10
+              xl:p-10
               text-4xl
-              md:text-5xl
+              lg:text-3xl
+              xl:text-5xl
               font-mont
               font-bold
               h-full
@@ -233,10 +254,9 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
 
     <hr style="padding: 0; margin: 0" />
 
-    <footer class="py-20 md:py-40">
+    <footer class="p-6 py-20 md:py-40">
       <div data-aos="fade-up" class="container is-large content has-text-centered text-center">
-        <h2 class="text-5xl md:text-6xl font-black mb-9">8 903 819-
-          39-09</h2>
+        <h2 class="text-5xl md:text-5xl font-black mb-9">8 903 819-39-09</h2>
 
         <p class="text-accent">Позвоните по этому <br>номеру и получите скидку 10%</p>
         <br>
