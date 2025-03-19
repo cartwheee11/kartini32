@@ -39,10 +39,10 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
         <div class="md:grid-cols-[1.5fr_1fr] grid gap-5">
           <div class="" data-aos="fade-up">
             <iframe class="rounded-4xl min-h-[400px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8130800058975!2d34.354695961653356!3d53.239126934286816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f8018b4617%3A0x9d894b4f3f2b0a90!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1589579621495!5m2!1sru!2sru"
-              height="100%" frameborder="0" style="border: 0; width: 100%" allowfullscreen="" aria-hidden="false"
-              tabindex="0">
-            </iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.8062424484615!2d34.3527056212051!3d53.239249497912375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d58f80186e4a3%3A0x83b4d578fba5ffaf!2z0YPQuy4g0JXQvNC70Y7RgtC40L3QsCwgNDIsINCR0YDRj9C90YHQuiwg0JHRgNGP0L3RgdC60LDRjyDQvtCx0LsuLCAyNDEwNTA!5e0!3m2!1sru!2sru!4v1742386172604!5m2!1sru!2sru"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
 
           <div class="bg-white p-7 md:p-10 rounded-4xl" data-aos="fade-up" data-aos-delay="200">
