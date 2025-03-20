@@ -8,7 +8,7 @@
       </div>
     </nav>
 
-    <div class="w-full h-[100vh] overflow-hidden" style="background: rgb(182,246,216);
+    <header class="w-full h-[100vh] overflow-hidden" style="background: rgb(182,246,216);
 background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 49%, rgba(182,246,216,1) 100%);
 " data-aos="zoom-out" data-aos-offset="20">
       <div
@@ -28,7 +28,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
           </p>
         </section>
       </div>
-    </div>
+    </header>
 
 
     <!-- <hr style="padding: 0; margin: 0" /> -->
@@ -87,19 +87,21 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
       </div>
     </section>
 
+
+    <!-- work section -->
     <section class="bg-accent">
       <div class="container grid grid-cols-1 lg:grid-cols-8  gap-4">
 
         <div class="gap-4 flex flex-col col-span-5">
-          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
-            src="../assets/images/work-examples/4.webp" alt="">
-          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
-            src="../assets/images/work-examples/3.webp" alt="">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/4.webp"
+            alt="">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/3.webp"
+            alt="">
         </div>
 
         <div class="flex flex-col gap-4 lg:col-span-3 col-span-5">
-          <img loading="lazy" data-aos="fade-up" class="col-span-3 w-full rounded-4xl"
-            src="../assets/images/work-examples/5.webp" alt="">
+          <img data-aos="fade-up" class="col-span-3 w-full rounded-4xl" src="../assets/images/work-examples/5.webp"
+            alt="">
           <div data-aos="fade-up" class="flex flex-col bg-white grow relative col-span-3 rounded-4xl p-8 md:p-10">
             <div>
               <p class="bg-back-2 rounded-full text-accent p-4 py-1 text-base font-mont font-bold inline-block">
@@ -155,6 +157,7 @@ background: linear-gradient(155deg, rgba(182,246,216,1) 0%, rgba(255,255,255,1) 
               font-mont
               font-bold
               h-full
+              border-solid
             ">Позвонить</a>
           </div>
 
@@ -336,6 +339,21 @@ onMounted(() => {
 <style>
 @reference "../assets/main.css";
 
+
+
+
+
+[data-aos] {
+  visibility: visible !important;
+  opacity: 0.01 !important;
+}
+
+[data-aos].aos-animate {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+[data-aos]
 
 /* swiper style */
 .swiper-slide img {
